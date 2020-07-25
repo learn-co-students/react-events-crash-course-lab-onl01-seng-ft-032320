@@ -32,7 +32,9 @@ export default class ChromeBoisDomain extends Component {
    */
   
   render() {
-    
+       trigger = ()=>{
+        this.toggleCycling()
+       }
     return (
       <canvas 
         onMouseMove={this.handleMouseMove}
@@ -40,7 +42,7 @@ export default class ChromeBoisDomain extends Component {
         height='600'
         tabIndex="0">
         
-        onClick={()=>{this.toggleCycling()}}
+        onClick={trigger}
       </canvas>
     )
   }
