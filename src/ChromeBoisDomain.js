@@ -43,7 +43,6 @@ export default class ChromeBoisDomain extends Component {
         onKeyPress={()=>{resize()}}
         onKeyPress={(a)=>{resize("+")}}
         onKeyPress={(s)=>{resize("-")}}
-        
         >
         
         
