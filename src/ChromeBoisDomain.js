@@ -18,7 +18,14 @@ export default class ChromeBoisDomain extends Component {
 
   }
   
-  
+   handlekeyPress = (event)=>{
+     if(event.key ==="a"){
+      resize("+")
+     }else if (event.key === "s"){
+       resize("-")
+     }
+     
+   }
   /* TODO: Create an event handler which, when fired, invokes the provided
    * `toggleCycling` function with no arguments. Don't forget the click event
    * listener that should fire it!
@@ -32,7 +39,7 @@ export default class ChromeBoisDomain extends Component {
    */
   
   render() {
-      
+        
     return (
       <canvas 
         onMouseMove={this.handleMouseMove}
@@ -40,9 +47,9 @@ export default class ChromeBoisDomain extends Component {
         height='600'
         tabIndex="0" 
         onClick={()=>{toggleCycling()}}
-        onKeyPress={()=>{resize()}}
-        onKeyPress={(a)=>{resize("+")}}
-        onKeyPress={(s)=>{resize("-")}}
+        onKeyPress={this. handlekeyPress}
+        // onKeyPress={(a)=>{resize("+")}}
+        // onKeyPress={(s)=>{resize("-")}}
         >
         
         
