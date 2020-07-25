@@ -32,7 +32,7 @@ export default class ChromeBoisDomain extends Component {
    */
   
   render() {
-       trigger = ()=>{
+       trigger =()=>{
         this.toggleCycling()
        }
     return (
